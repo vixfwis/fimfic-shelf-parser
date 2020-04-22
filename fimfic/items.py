@@ -8,7 +8,14 @@
 import scrapy
 
 
-class FimficItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class FimficStory(scrapy.Item):
+    shelf_user_id = scrapy.Field()
+    shelf_user_name = scrapy.Field()
+    shelf_id = scrapy.Field()
+    shelf_name = scrapy.Field()
+    name = scrapy.Field()
+    link = scrapy.Field()
+    dl_link = scrapy.Field()
+    filename = scrapy.Field()
+    body = scrapy.Field()
+
